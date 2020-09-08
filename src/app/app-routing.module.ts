@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {ContentViewComponent} from './content-view/content-view.component';
 
 const routes: Routes = [
-  { path: '', component: ContentViewComponent },
+  { path: '**', redirectTo: '/home' },
   { path: 'home', component: ContentViewComponent }
 ];
 
