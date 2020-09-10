@@ -1,0 +1,9 @@
+<app-search [placeholder]="'Search a movie'"
+            (movieSelected)="onMovieSelected($event)">
+</app-search>
+<mat-grid-list cols="6" rowHeight="250px" style="width: 70%; margin-left: auto; margin-right: auto; margin-top: 20px;">
+  <mat-grid-tile *ngFor="let movie of movies">
+    <a [routerLink]="['description', movie.imdbID]"><img class="img-size" [src]="movie.Poster" [matTooltip]="movie.Title"></a>
+  </mat-grid-tile>
+</mat-grid-list>
+

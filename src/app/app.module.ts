@@ -16,8 +16,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {SearchComponent} from './search/search.component';
-import {ActionComponent} from './categories/action/action.component';
 import {FormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import { MovieComponent } from './movie/movie.component';
+import { FavorisComponent } from './favoris/favoris.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { DescriptionComponent } from './movie/description/description.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import {FormsModule} from '@angular/forms';
     ContentViewComponent,
     HomeComponent,
     SearchComponent,
-    ActionComponent
+    MovieComponent,
+    FavorisComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,9 @@ import {FormsModule} from '@angular/forms';
     MatGridListModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

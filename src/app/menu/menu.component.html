@@ -1,25 +1,27 @@
 <mat-toolbar>
-  <span class="position-text">Welcome to "Watch Movies"</span>
+  <span class="position-text">Welcome to "Find Movies"</span>
 </mat-toolbar>
 
 <mat-tab-group animationDuration="0ms" mat-align-tabs="center">
   <mat-tab>
     <ng-template mat-tab-label>
       <mat-icon class="tab-icon">home</mat-icon>
-      HOME
+      Home
     </ng-template>
     <app-home></app-home>
   </mat-tab>
-  <mat-tab label="ACTION">
-    <app-action></app-action>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">search</mat-icon>
+      Search a movie
+    </ng-template>
+    <app-movie></app-movie>
   </mat-tab>
-  <mat-tab label="DRAME"> Content 3</mat-tab>
-  <mat-tab label="COMEDIE"> Content 2</mat-tab>
-  <mat-tab label="ANIMATION"> Content 3</mat-tab>
-  <mat-tab label="POLICIER"> Content 2</mat-tab>
-  <mat-tab label="FICTION"> Content 3</mat-tab>
-  <mat-tab label="HORREUR"> Content 2</mat-tab>
-  <mat-tab label="GUERRE"> Content 3</mat-tab>
-  <mat-tab label="AVENTURE"> Content 2</mat-tab>
-  <mat-tab label="ROMANCE"> Content 3</mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">grade</mat-icon>
+      Favorites
+    </ng-template>
+    <app-favoris></app-favoris>
+  </mat-tab>
 </mat-tab-group>
