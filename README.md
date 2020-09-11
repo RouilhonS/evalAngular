@@ -12,5 +12,5 @@ It's a project that will allow you to search for a movie with its name
 
 ## Run project
 
-Run `npm-install` after download this project
+Run `npm-install` after download this project  
 Run `ng serve` for run your project
