@@ -1,1 +1,50 @@
-<p>description works!</p>
+<div class="row" style="max-height: 550px; height: 550px">
+  <div style="display: flex; flex-flow: row wrap;">
+    <div>
+      <img [src]="movie.Poster" style="height: 400px; max-height: 400px; margin-left: 50px; margin-top: 50px">
+    </div>
+    <div
+      style="margin-left: 80px; margin-top: 65px;">
+      <h3 class="color-text" style="font-size: 50px;">{{movie.Title}}</h3>
+      <div style="margin-top: 65px">
+        <p>
+          <span class="color-text">{{movie.Year}}</span>
+          <span class="color-text"> - </span>
+          <span class="color-text">{{movie.Genre}}</span>
+        </p>
+        <p class="color-text">{{movie.Runtime}}</p>
+        <p>
+          <span><i><mat-icon class="color-text">favorite</mat-icon></i></span>
+          <span class="color-text" style="margin-left: 10px;">{{movie.imdbVotes}}</span>
+        </p>
+      </div>
+      <div style="margin-top: 65px">
+        <p>
+          <span class="color-text" style="font-size: 17px">Director - </span>
+          <span class="color-text" style="margin-left: 5px">{{movie.Director}}</span>
+        </p>
+        <p>
+          <span class="color-text" style="font-size: 17px">Actors - </span>
+          <span class="color-text" style="margin-left: 5px">{{movie.Actors}}</span>
+        </p>
+        <p>
+          <span class="color-text" style="font-size: 17px">Writer - </span>
+          <span class="color-text" style="margin-left: 5px">{{movie.Writer}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="text-align: center">
+  <h3 style="font-size: 20px;" class="color-text">Abstract:</h3>
+  <p class="color-text">{{movie.Plot}}</p>
+</div>
+<div style="text-align: center">
+  <p>
+    <span class="color-text">Released - </span>
+    <span class="color-text">{{movie.Released}}</span>
+  </p>
+</div>
+<div style="text-align: center">
+  <button mat-raised-button color="accent" (click)="backClicked()">Home</button>
+</div>

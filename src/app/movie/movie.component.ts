@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {SearcherService} from '../_service/searcher.service';
 import Swal from 'sweetalert2';
+import {Description} from '../_model/movie.model';
 
 @Component({
   selector: 'app-movie',
@@ -12,7 +13,7 @@ export class MovieComponent implements OnInit {
   constructor(private searcher: SearcherService) {
   }
 
-  movies: any[] = [];
+  movies: Description[] = [];
 
   ngOnInit(): void {
   }
