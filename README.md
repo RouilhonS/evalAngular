@@ -1,10 +1,10 @@
-# Watchfilm
+# Findfilm
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+It's a project that will allow you to search for your films with its name
 
-## Development server
+## Search a movie
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![alt text](https://github.com/RouilhonS/evalAngular/blob/master/src/assets/img/searchMovie.PNG)
 
 ## Code scaffolding
 
