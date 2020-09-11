@@ -6,9 +6,9 @@ It's a project that will allow you to search for your films with its name
 
 ![alt text](https://github.com/RouilhonS/evalAngular/blob/master/src/assets/img/searchMovie.PNG)
 
-## Code scaffolding
+## Détails Movie
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![alt text](https://github.com/RouilhonS/evalAngular/blob/master/src/assets/img/detailsMovie.PNG)
 
 ## Build
 
